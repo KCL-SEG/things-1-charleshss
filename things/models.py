@@ -3,9 +3,8 @@ from django.core.validators import MaxValueValidator, MinValueValidator
 
 # Create your models here.
 class Thing(models.Model):
-    name = models.CharField
-    (
-    unique = True,
+    name = models.CharField(
+    unique=True,
     max_length=30,
     blank=False
     )
